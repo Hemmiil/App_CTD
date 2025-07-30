@@ -15,7 +15,7 @@ st.subheader("結合するCSVファイルを選択してください")
 @st.cache_data
 def f01__csv_files():
     csv_files = glob.glob(
-        "/Users/henmi_note/Desktop/Project_CrtData/data/02__Rawdata_cp/*/*/*.Csv")
+        "data/02__Rawdata_cp/*/*/*.Csv")
     return csv_files
 
 csv_files = f01__csv_files()
